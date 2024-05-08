@@ -11,9 +11,9 @@
 <body>
     <!-- For Registration/Sign up -->
     <div class="container" id="signUp" style="display: none;">
-        <h1 class="form-title">Register</h1>
-            <form method="post" action="register.php">
-
+                    <h1 class="form-title">Register</h1>
+                    
+                    <form method="post" action="register.php">
                 <!-- For First Name -->
                 <div class="input-group">
                     <i class="fa-solid fa-user"></i>
@@ -53,6 +53,7 @@
                  <div class="input-group">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password"  id="password" placeholder="Enter your Password">
+                    <i class="ri-eye-line" id="show-pass"></i>
                 <label for="password">Password</label>
                 </div>
 
@@ -60,6 +61,7 @@
                 <div class="input-group">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password"  id="cnfPassword" placeholder="Confrim your Password">
+                    <i class="ri-eye-line" id="show-pass2"></i>
                 <label for="cnfPassword">Confrim Password</label>
             </div>
             <!-- cnfPassword & Password  is same or not -->
@@ -99,7 +101,8 @@
            <!-- For Password  -->
              <div class="input-group">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password"  id="password" placeholder="Enter your Password">
+                <input type="password"  id="password" placeholder="Enter your Password" class="signInPass"> 
+                <i class="ri-eye-line" id="show-pass3"></i>
             <label for="password">Password</label>
             </div>
             <p class="recover">
