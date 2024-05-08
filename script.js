@@ -37,3 +37,30 @@ function checkPassword (){
     }
 
 }
+
+const showPassword = document.querySelector("#show-pass");
+const PasswordFeild = document.querySelector("#password");
+
+showPassword.addEventListener("click",function(){
+    this.classList.toggle("ri-eye-off-line");
+    const type = PasswordFeild.getAttribute("type")==="password" ? "text" : "password" ; 
+    PasswordFeild.setAttribute("type" , type);
+})
+
+const showPassword2 = document.querySelector("#show-pass2");
+const PasswordFeild2 = document.querySelector("#cnfPassword");
+
+showPassword2.addEventListener("click",function(){
+    this.classList.toggle("ri-eye-off-line");
+    const type = PasswordFeild2.getAttribute("type")==="password" ? "text" : "password" ; 
+    PasswordFeild2.setAttribute("type" , type);
+})
+
+const showPassword3 = document.querySelector("#show-pass3");
+const PasswordFeild3 = document.querySelector(".signInPass");
+
+showPassword3.addEventListener("click",function(){
+    this.classList.toggle("ri-eye-off-line");
+    const type = PasswordFeild3.getAttribute("type")==="password" ? "text" : "password" ; 
+    PasswordFeild3.setAttribute("type" , type);
+})
